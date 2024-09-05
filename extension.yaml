@@ -14,5 +14,5 @@ config:
   ui:
     surfaces:
       - extension-team-configuration
-      - extension-site-general-configuration
+      - extension-top-level-site-configuration
 

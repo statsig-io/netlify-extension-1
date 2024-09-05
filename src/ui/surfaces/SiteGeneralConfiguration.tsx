@@ -16,6 +16,10 @@ export const SiteGeneralConfiguration = () => {
   return (
     <SiteGeneralConfigurationSurface>
       <Card>
+        <h2>Woohoo</h2>
+        <p>This is not bad
+          
+        </p>
         <Form onSubmit={onSubmit}>
           <FormField name="username" label="Username" />
           <FormFieldSecret name="password" label="password" />

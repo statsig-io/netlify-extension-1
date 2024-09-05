@@ -2,8 +2,7 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { SurfaceRoute, SurfaceRouter } from "@netlify/sdk/ui/react/components";
 import { Surfaces, useNetlifyExtensionUIFetch } from "@netlify/sdk/ui/react";
 
-// import { SiteConfiguration } from "./surfaces/SiteConfigurationOld.js";
-import { SiteGeneralConfiguration } from "./surfaces/SiteGeneralConfiguration.jsx";
+import { SiteConfiguration } from "./surfaces/SiteConfiguration.jsx";
 import { TeamConfiguration } from "./surfaces/TeamConfiguration.jsx";
 import { httpBatchLink } from "@trpc/client";
 import { trpc } from "./trpc.js";
@@ -28,7 +27,7 @@ export const App = () => {
       <QueryClientProvider client={queryClient}>
         <SurfaceRouter>
           <SurfaceRoute surface={Surfaces.SiteGeneralConfiguration}>
-            <SiteGeneralConfiguration />
+            <SiteConfiguration />
           </SurfaceRoute>
 
           <SurfaceRoute surface={Surfaces.TeamConfiguration}>
