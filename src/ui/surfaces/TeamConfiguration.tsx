@@ -8,9 +8,10 @@ import {
   FormFieldSecret,
   TeamConfigurationSurface,
 } from "@netlify/sdk/ui/react/components";
-import { useNetlifySDK } from "@netlify/sdk/ui/react";
-import { trpc } from "../trpc";
+
 import { teamSettingsSchema } from "../../schema/team-settings-schema";
+import { trpc } from "../trpc";
+import { useNetlifySDK } from "@netlify/sdk/ui/react";
 
 export const TeamConfiguration = () => {
   const sdk = useNetlifySDK();
@@ -29,7 +30,7 @@ export const TeamConfiguration = () => {
   return (
     <TeamConfigurationSurface>
       <Card>
-        <CardTitle>Example Section for {sdk.extension.name}</CardTitle>
+        <CardTitle>Example Section 123 TEST for {sdk.extension.name}</CardTitle>
         <Form
           defaultValues={
             teamSettingsQuery.data ?? {

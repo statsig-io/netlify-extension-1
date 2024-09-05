@@ -1,6 +1,6 @@
 # yaml-language-server: $schema=https://sdk.netlify.com/sdk/config-schema.json
 config:
-  slug: jtsgc8s3-statsig-test2
+  slug: 2-gjw55m-test-statsig-1
   name: My Awesome Statsig Extension
   description: AB Tests and Analytics
   scopes:
@@ -14,3 +14,4 @@ config:
   ui:
     surfaces:
       - extension-team-configuration
+      - extension-site-general-configuration
